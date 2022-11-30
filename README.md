@@ -9,6 +9,7 @@
 <body>
   <div style="width: 100%">
     <p><a target="_blank" href="22.11/index.html">KuzbassBank</p>
+      <p><a target="_blank" href="22.11/index.html">KuzbassBank</p>
   </div>
 </body>
 </html>
