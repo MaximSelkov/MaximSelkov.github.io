@@ -8,7 +8,7 @@
 </head>
 <body>
   <div style="width: 100%">
-    <p><a target="_blank" href="22.11/index.html">KuzbassBank</a target="_blank"></p>
+    <p><a target="_blank" href="22.11/index.html">KuzbassBank</p>
   </div>
 </body>
 </html>
