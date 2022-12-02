@@ -1,121 +1,133 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <title>Лига Банк</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <title>Лига Банк</title>
 </head>
 <body>
+  <div id="content">
+  <div id="f">
     <header>
-        <nav class="navbar navbar-expand-lg" style="margin-bottom: 2%;">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img src="image/svg/logo.svg" alt=""></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav" style="margin-top: 1%;">
-                <div class="col-9">
-                <ul class="navbar-nav navbar-right">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Услуги</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Рассчитать кредит</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Контакты</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Задать вопросы</a>
-                  </li>
-                </div>  
-                  <div class="col-3" >
-                    <ul class="navbar-nav navbar-right">
-                    <li class="nav-item ">
-                        <a class="nav-link" href="#"><img src="image/login.png" style="max-width:10%"> Войти в Интернет-банк</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+      <nav class="navbar navbar-expand-lg" style="margin-bottom: 2%;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="image/svg/logo.svg" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav" style="margin-top: 1%;">
+            <div class="col-9">
+              <ul class="navbar-nav navbar-right">
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Услуги</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Рассчитать кредит</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Контакты</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Задать вопросы</a>
+                </li>
             </div>
-          </nav>
-    </header>
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="margin-bottom: 2%;">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="image/slider-bg-girl@1x.jpg" class="d-block w-100" alt="...">
-            <div class="carouser_text">
-                <h4>Лига банк</h4>
-                <p>Всегда рядом</p>
-                <button class="btn btn-primary">Найти отделение</button>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="image/slider-bg-main@1x.jpg" class="d-block w-100" alt="...">
-            <div class="carouser_text">
-                <h4 style="color: white;">Оформи карту</h4>
-                <p style="color: white;">Кешбек, бонусы за покупки</p>
-                <button class="btn btn-primary">Оформить онлайн</button>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="image/slider-bg-man@1x.jpg" class="d-block w-100" alt="...">
-            <div class="carouser_text">
-                <h4>Банк для бизнеса</h4>
-                <p>Самые выгодные условия для ведения бизнеса</p>
-                <button class="btn btn-primary">Узнать больше</button>
+            <div class="col-3">
+              <ul class="navbar-nav navbar-right">
+                <li class="nav-item ">
+                  <a class="nav-link" href="#" onclick="autorization()"><img src="image/login.png"
+                      style="max-width:10%"> Войти в Интернет-банк</a>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden"></span>
-        </button>
-      </div>
-      <div class="row" style="margin: 0 5% 0 10%;">
-      <div class="col-3" style="background-color: #f6f7ff;">
-        <button class="btnTab" style="width: 100%;" onclick="tabOne()"><img src="image/svg/icon-blue-vault.svg"> Вклады</button>
-      </div>
-      <div class="col-3" >
-        <button class="btnTab" style="width: 100%;" onclick="tabTwo()"><img src="image/svg/icon-blue-cards.svg">Кредиты</button>
-      </div>
-      <div class="col-3">
-        <button class="btnTab" style="width: 100%;" onclick="tabThree()"><img src="image/svg/icon-blue-security.svg">Страхование</button>
-      </div>
-      <div class="col-3" style="width: 19.2%;">
-        <button class="btnTab" style="width: 80%;" onclick="tabFour()"><img src="image/svg/icon-blue-phone.svg">Онлайн-сервисы</button>
-      </div>
-    </div>
-    <div class="row" style="background-color: #f6f7ff; margin: 0 10% 0 10%; padding: 2% 10% 2% 2%;" class="tabs">
-        <div class="col-md-8">
-            <h5 id="h5">Вклады Лига Банка - это выгодная инвестиция в свое будущее</h5>
-            <p><img src="image/svg/tick.svg"><span class="pp">Проценты по вкладам до 7%</span> </p>
-            <p><img src="image/svg/tick.svg"><span class="pp">Разнообразные условия</span></p>
-            <span><img src="image/svg/tick.svg" id="lastImg"><span class="pp">Возможность ежемесячной капитализации или вывод процентов на банковскую карту<br><br></span></span>
-            <button class="btn btn-primary" style="width: 35%" id="btn">Узнать подробнее</button>
+  </div>
+  </nav>
+  </header>
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="margin-bottom: 2%;">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="image/slider-bg-girl@1x.jpg" class="d-block w-100" alt="...">
+        <div class="carouser_text">
+          <h4>Лига банк</h4>
+          <p>Всегда рядом</p>
+          <button class="btn btn-primary">Найти отделение</button>
         </div>
-        <div class="col-md-4">
-            <img src="image/content/tab-piggybank-tablet@1x.jpg" style="max-width: 150%;" id="imageTab">
-        </div>  
-    </div>
-    <div class="row" style="margin-left: 9%; margin-top: 5%;">
-      <!--Калькулятор-->
-      <div col-md-12>
-        <h2>Кредитный калькулятор</h2>
+      </div>
+      <div class="carousel-item">
+        <img src="image/slider-bg-main@1x.jpg" class="d-block w-100" alt="...">
+        <div class="carouser_text">
+          <h4 style="color: white;">Оформи карту</h4>
+          <p style="color: white;">Кешбек, бонусы за покупки</p>
+          <button class="btn btn-primary">Оформить онлайн</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="image/slider-bg-man@1x.jpg" class="d-block w-100" alt="...">
+        <div class="carouser_text">
+          <h4>Банк для бизнеса</h4>
+          <p>Самые выгодные условия для ведения бизнеса</p>
+          <button class="btn btn-primary">Узнать больше</button>
+        </div>
       </div>
     </div>
-    <div class="row" style="margin-left: 9%;">
-      <div class="col-md-6">
-        <h6 style=" margin-top: 5%;">Шаг 1.Цель кредита</h6>
-        <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" onchange="creditTarget(this)" onclick="textBlockClear()">
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden"></span>
+    </button>
+  </div>
+  <div class="row" style="margin: 0 5% 0 10%;">
+    <div class="col-3" style="background-color: #f6f7ff;">
+      <button class="btnTab" style="width: 100%;" onclick="tabOne()"><img src="image/svg/icon-blue-vault.svg">
+        Вклады</button>
+    </div>
+    <div class="col-3">
+      <button class="btnTab" style="width: 100%;" onclick="tabTwo()"><img
+          src="image/svg/icon-blue-cards.svg">Кредиты</button>
+    </div>
+    <div class="col-3">
+      <button class="btnTab" style="width: 100%;" onclick="tabThree()"><img
+          src="image/svg/icon-blue-security.svg">Страхование</button>
+    </div>
+    <div class="col-3" style="width: 19.2%;">
+      <button class="btnTab" style="width: 80%;" onclick="tabFour()"><img
+          src="image/svg/icon-blue-phone.svg">Онлайн-сервисы</button>
+    </div>
+  </div>
+  <div class="row" style="background-color: #f6f7ff; margin: 0 10% 0 10%; padding: 2% 10% 2% 2%;" class="tabs">
+    <div class="col-md-8">
+      <h5 id="h5">Вклады Лига Банка - это выгодная инвестиция в свое будущее</h5>
+      <p><img src="image/svg/tick.svg"><span class="pp">Проценты по вкладам до 7%</span> </p>
+      <p><img src="image/svg/tick.svg"><span class="pp">Разнообразные условия</span></p>
+      <span><img src="image/svg/tick.svg" id="lastImg"><span class="pp">Возможность ежемесячной капитализации или вывод
+          процентов на банковскую карту<br><br></span></span>
+      <button class="btn btn-primary" style="width: 35%" id="btn">Узнать подробнее</button>
+    </div>
+    <div class="col-md-4">
+      <img src="image/content/tab-piggybank-tablet@1x.jpg" style="max-width: 150%;" id="imageTab">
+    </div>
+  </div>
+  <div class="row" style="margin-left: 9%; margin-top: 5%;">
+    <!--Калькулятор-->
+    <div col-md-12>
+      <h2>Кредитный калькулятор</h2>
+    </div>
+  </div>
+  <div class="row" style="margin-left: 9%;">
+    <div class="col-md-6">
+      <h6 style=" margin-top: 5%;">Шаг 1.Цель кредита</h6>
+      <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" onchange="creditTarget(this)"
+        onclick="textBlockClear()">
         <option selected disabled>Выберите цель кредита</option>
         <option value="1">Ипотечное кредитование</option>
         <option value="2">Автомобильное кредитование</option>
@@ -124,12 +136,14 @@
       <div id="ipoteka" style="display: none;">
         <h6 style="margin-top: 5%;">Шаг 2.Введите параметры кредита</h6>
         <span>Стоимость недвижимости</span>
-        <input type="text" class="form-control form-control-lg" readonly value="1200000" id="stoimost" style="text-align:center;">
+        <input type="text" class="form-control form-control-lg" readonly value="1200000" id="stoimost"
+          style="text-align:center;">
         <button class="calc-minus" onclick="calcMinus()">-</button>
         <button class="calc-plus" onclick="calcPlus()">+</button>
         <p style="margin-top:-5%;">От 1 200 000 до 25 000 000 рублей</p>
         <div style=" margin-top: 2%;">Первоначальный взнос</div>
-        <input type="text" class="form-control form-control-lg" readonly value="200000" id="vznos" style="text-align:center;">
+        <input type="text" class="form-control form-control-lg" readonly value="200000" id="vznos"
+          style="text-align:center;">
         <input type="range" class="form-range" min="10" max="40" value="10" id="range1" onchange="range1Change()"><br>
         <span id="range1Procent">10%</span><br>
         <div style=" margin-top: 2%;">Срок кредитования</div>
@@ -146,12 +160,14 @@
       <div id="auto" style="display: none;">
         <h6 style="margin-top: 5%;">Шаг 2.Введите параметры кредита</h6>
         <span>Стоимость автомобиля</span>
-        <input type="text" class="form-control form-control-lg" readonly value="500000" id="stoimostAuto" style="text-align:center;">
+        <input type="text" class="form-control form-control-lg" readonly value="500000" id="stoimostAuto"
+          style="text-align:center;">
         <button class="calc-minus" onclick="calcMinusAuto()">-</button>
         <button class="calc-plus" onclick="calcPlusAuto()">+</button>
         <p style="margin-top:-5%;">От 500 000 до 5 000 000 рублей</p>
         <div style=" margin-top: 2%;">Первоначальный взнос</div>
-        <input type="text" class="form-control form-control-lg" readonly value="100000" id="vznosAuto" style="text-align:center;">
+        <input type="text" class="form-control form-control-lg" readonly value="100000" id="vznosAuto"
+          style="text-align:center;">
         <input type="range" class="form-range" min="20" max="60" value="20" id="range1Auto" onchange="range1Auto()"><br>
         <span id="range1AutoProcent">10%</span><br>
         <div style=" margin-top: 2%;">Срок кредитования</div>
@@ -163,103 +179,121 @@
       <div id="credit" style="display: none;">
         <h6 style="margin-top: 5%;">Шаг 2.Введите параметры кредита</h6>
         <span>Стоимость автомобиля</span>
-        <input type="text" class="form-control form-control-lg" readonly value="50000" id="sumCredit" style="text-align:center;">
+        <input type="text" class="form-control form-control-lg" readonly value="50000" id="sumCredit"
+          style="text-align:center;">
         <button class="calc-minus" onclick="creditMinus()">-</button>
         <button class="calc-plus" onclick="creditPlus()">+</button>
         <p style="margin-top:-5%;">От 50 000 до 3 000 000 рублей</p>
         <div style=" margin-top: 2%;">Срок кредитования</div>
         <input type="text" class="form-control form-control-lg" value="1" readonly id="yearCredit" placeholder="0">
-        <input type="range" class="form-range" min="1" max="7" value="1" id="rangeCredit" onchange="rangeCreditChange()"><br>
+        <input type="range" class="form-range" min="1" max="7" value="1" id="rangeCredit"
+          onchange="rangeCreditChange()"><br>
         <span>1 год</span>
         <span style="margin-left: 80%;">7 лет</span>
       </div>
-      </div>
-      <div class="col-md-6" >
-        <div class="textBlock" id="textBlock">
-          <h6>Наше предложение</h6>
-          <table class="table table-borderless">
-            <tr>
-              <td>
-                <h6 id="sum">0 рублей</h6>
-                <p id="valueCredit">Сумма ипотеки</p>
-              </td>
-              <td>
-                <h6 id="stavka">10%</h6>
-                <p>Процентная ставка</p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <h6 id="dohod">0 рублей</h6>
-                <p>Ежемесячный платеж</p>
-              </td>
-              <td>
-                <h6 id="n_dohod">0 рублей</h6>
-                <p>Необходимый доход</p>
-              </td>
-            </tr>
-          </table>
-          <button class="btn btn-primary" style="width: 100%;">Оформить заявку</button>
-        </div>
+    </div>
+    <div class="col-md-6">
+      <div class="textBlock" id="textBlock">
+        <h6>Наше предложение</h6>
+        <table class="table table-borderless">
+          <tr>
+            <td>
+              <h6 id="sum">0 рублей</h6>
+              <p id="valueCredit">Сумма ипотеки</p>
+            </td>
+            <td>
+              <h6 id="stavka">10%</h6>
+              <p>Процентная ставка</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <h6 id="dohod">0 рублей</h6>
+              <p>Ежемесячный платеж</p>
+            </td>
+            <td>
+              <h6 id="n_dohod">0 рублей</h6>
+              <p>Необходимый доход</p>
+            </td>
+          </tr>
+        </table>
+        <button class="btn btn-primary" style="width: 100%;">Оформить заявку</button>
       </div>
     </div>
-    <div class="row" style="margin-top: 5%;">
-      <div class="col-md-12" style="margin: 0 5% 0 10%;">
-        <h2>Отделения Лига Банка</h2>
-        <div style="background-color: #f6f7ff; width: 80%;"> 
+  </div>
+  <div class="row" style="margin-top: 5%;">
+    <div class="col-md-12" style="margin: 0 5% 0 10%;">
+      <h2>Отделения Лига Банка</h2>
+      <div style="background-color: #f6f7ff; width: 80%;">
         <form name="mapChecked" style="margin-left: 40%; padding: 2% 2% 2% 2%" onclick="mapCheckedChange()">
           <input type="checkbox" checked class="form-check-input" name="russia">
           <label class="form-check-label" for="russiaChecked">Россия</label>
-          <input type="checkbox" checked  class="form-check-input" name="sng">
+          <input type="checkbox" checked class="form-check-input" name="sng">
           <label class="form-check-label" for="sngChecked">СНГ</label>
           <input type="checkbox" checked class="form-check-input" name="europa">
           <label class="form-check-label" for="europaChecked">Европа</label>
         </form>
-        <iframe id="yandexMap" src="https://yandex.ru/map-widget/v1/?um=constructor%3A0c7a0ea5304f41d573f3d4e96af89157d26ee3e2da85746142cbb52ddc65b883&amp;source=constructor" width="100%" height="500" frameborder="0"></iframe>
+        <iframe id="yandexMap"
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3A0c7a0ea5304f41d573f3d4e96af89157d26ee3e2da85746142cbb52ddc65b883&amp;source=constructor"
+          width="100%" height="500" frameborder="0"></iframe>
         <script>
-          function mapCheckedChange(){
-          let yandexMap = document.getElementById('yandexMap');
-          let russia = document.getElementById('russia');
-          let sng = document.getElementById('sng');
-          let europa = document.getElementById('europa');
-          console.log(russia.checked);
-          if(russia.checked && sng.checked && europa.checked){
-            yandexMap.setAttribute('src', 'https://yandex.ru/map-widget/v1/?um=constructor%3A0c7a0ea5304f41d573f3d4e96af89157d26ee3e2da85746142cbb52ddc65b883&amp;source=constructor');
-          }
-          else{
-            yandexMap.setAttribute('src', '');
-          }
+          function mapCheckedChange() {
+            let yandexMap = document.getElementById('yandexMap');
+            let russia = document.getElementById('russia');
+            let sng = document.getElementById('sng');
+            let europa = document.getElementById('europa');
+            console.log(russia.checked);
+            if (russia.checked && sng.checked && europa.checked) {
+              yandexMap.setAttribute('src', 'https://yandex.ru/map-widget/v1/?um=constructor%3A0c7a0ea5304f41d573f3d4e96af89157d26ee3e2da85746142cbb52ddc65b883&amp;source=constructor');
+            }
+            else {
+              yandexMap.setAttribute('src', '');
+            }
           }
         </script>
       </div>
     </div>
+  </div>
+  <footer class="bg-light text-center text-lg-start" style="margin-top: 5%;">
+    <div class="container p-4">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <a href="#"><img src="image/svg/logo.svg" alt="Лига Банк" style="max-width: 60%; min-width: 30%;"></a>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#" class="text-dark">Услуги</a>
+            </li>
+            <li>
+              <a href="#" class="text-dark">Рассчитать кредит</a>
+            </li>
+            <li>
+              <a href="#" class="text-dark">Контакты</a>
+            </li>
+            <li>
+              <a href="#" class="text-dark">Задать вопрос</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <p>*0904</p>
+          <p>Бесплатно для абонентов МТС, Билайн, Мегафон, Теле2</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <p>8 800 111 22 33</p>
+          <p>Бесплатный для всех городов России</p>
+        </div>
+      </div>
     </div>
-    <footer class="bg-light text-center text-lg-start" style="margin-top: 5%;">
-      <div class="container p-4">
-        <div class="row">
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              <a href="#"><img src="image/svg/logo.svg" alt="Лига Банк" style="max-width: 60%; min-width: 30%;"></a>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-            <ul class="list-unstyled mb-0">
-              <li>
-                <a href="#" class="text-dark">Услуги</a>
-              </li>
-              <li>
-                <a href="#" class="text-dark">Рассчитать кредит</a>
-              </li>
-              <li>
-                <a href="#" class="text-dark">Контакты</a>
-              </li>
-              <li>
-                <a href="#" class="text-dark">Задать вопрос</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-              
-          </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <script src="script/script.js"></script>
+    </footer>
+  </div>
+  <div id="autoriz" style="background-color: white; ">
+  </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+      <script src="script/script.js"></script>
 </body>
+
 </html>

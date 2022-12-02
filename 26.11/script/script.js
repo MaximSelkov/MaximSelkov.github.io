@@ -187,4 +187,9 @@ function textBlockClear(){
     dohod.innerHTML = '';
     n_dohod.innerHTML = '';
 }
+
+let content = document.getElementById('content');
+function autorization(){
+    content.style.display = 'block';
+}
   
