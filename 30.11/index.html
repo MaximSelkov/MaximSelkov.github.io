@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Maximko.ru</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="img/logo.png" alt="">
+        </div>
+        <nav class="menu">
+         <ul>
+          <li><a href="#">Мои работы</a></li>
+          <li><a href="#">Я изучаю</a></li>
+          <li><a href="#">Услуги и цены</a></li>
+          <li><a href="#">Контакты</a></li>
+         </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="clocks">
+            <h2>Часы</h2>
+            <p id="clock"></p>
+            <div class="clockButtons">
+                <button onclick="makeOrder()" id="clockButton" style="display: block;">Нажми на меня!</button>
+            </div>
+            <div id="orderBody" style="display: none;">
+                <div class="orderHeader">
+                    <h2></h2>
+                    <button id="close" onclick="closeOrderBody()">X</button>
+                </div>
+                <div class="page">
+                    <h4>
+                      У меня есть время?
+                    </h4>
+                
+                    <img id="lolcat" src="https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/08/normalTime.jpg" alt="lolcat">
+                
+                    <blockquote id="timeEvent">This is where time events are reported</blockquote>
+                    Время пробуждения
+                    <select id="wakeUpTimeSelector">
+                      <option value="1">1 AM – 2AM</option>
+                      <option value="2">2 AM – 3AM</option>
+                      <option value="3">3 AM – 4AM</option>
+                      <option value="4">4 AM – 5AM</option>
+                      <option value="5">5 AM – 6AM</option>
+                      <option value="6">6 AM – 7AM</option>
+                      <option value="7">7 AM – 8AM</option>
+                      <option value="8" selected="selected">8 AM – 9AM</option>
+                      <option value="9">9 AM – 10AM</option>
+                      <option value="10">10 AM – 11AM</option>
+                      <option value="11">11 AM – 12PM</option>
+                      <option value="12">12 PM – 1PM</option>
+                      <option value="13">1 PM – 2PM</option>
+                      <option value="14">2 PM – 3PM</option>
+                      <option value="15">3 PM – 4PM</option>
+                      <option value="16">4 PM – 5PM</option>
+                      <option value="17">5 PM – 6PM</option>
+                      <option value="18">6 PM – 7PM</option>
+                      <option value="19">7 PM – 8PM</option>
+                      <option value="20">8 PM – 9PM</option>
+                      <option value="21">9 PM – 10PM</option>
+                      <option value="22">10 PM – 11PM</option>
+                      <option value="23">11 PM – 12AM</option>
+                      <option value="24">12 AM – 1AM</option>
+                    </select><br>
+                
+                    Время обеда
+                      <select id="lunchTimeSelector">
+                        <option value="1">1 AM – 2AM</option>
+                        <option value="2">2 AM – 3AM</option>
+                        <option value="3">3 AM – 4AM</option>
+                        <option value="4">4 AM – 5AM</option>
+                        <option value="5">5 AM – 6AM</option>
+                        <option value="6">6 AM – 7AM</option>
+                        <option value="7">7 AM – 8AM</option>
+                        <option value="8">8 AM – 9AM</option>
+                        <option value="9">9 AM – 10AM</option>
+                        <option value="10">10 AM – 11AM</option>
+                        <option value="11">11 AM – 12PM</option>
+                        <option value="12" selected="selected">12 PM – 1PM</option>
+                        <option value="13">1 PM – 2PM</option>
+                        <option value="14">2 PM – 3PM</option>
+                        <option value="15">3 PM – 4PM</option>
+                        <option value="16">4 PM – 5PM</option>
+                        <option value="17">5 PM – 6PM</option>
+                        <option value="18">6 PM – 7PM</option>
+                        <option value="19">7 PM – 8PM</option>
+                        <option value="20">8 PM – 9PM</option>
+                        <option value="21">9 PM – 10PM</option>
+                        <option value="22">10 PM – 11PM</option>
+                        <option value="23">11 PM – 12AM</option>
+                        <option value="24">12 AM – 1AM</option>
+                      </select><br>
+                
+                    Время сна
+                    <select id="napTimeSelector">
+                      <option value="1">1 AM – 2AM</option>
+                      <option value="2">2 AM – 3AM</option>
+                      <option value="3">3 AM – 4AM</option>
+                      <option value="4">4 AM – 5AM</option>
+                      <option value="5">5 AM – 6AM</option>
+                      <option value="6">6 AM – 7AM</option>
+                      <option value="7">7 AM – 8AM</option>
+                      <option value="8">8 AM – 9AM</option>
+                      <option value="9">9 AM – 10AM</option>
+                      <option value="10">10 AM – 11AM</option>
+                      <option value="11">11 AM – 12PM</option>
+                      <option value="12">12 PM – 1PM</option>
+                      <option value="13">1 PM – 2PM</option>
+                      <option value="14">2 PM – 3PM</option>
+                      <option value="15" selected="selected">3 PM – 4PM</option>
+                      <option value="16">4 PM – 5PM</option>
+                      <option value="17">5 PM – 6PM</option>
+                      <option value="18">6 PM – 7PM</option>
+                      <option value="19">7 PM – 8PM</option>
+                      <option value="20">8 PM – 9PM</option>
+                      <option value="21">9 PM – 10PM</option>
+                      <option value="22">10 PM – 11PM</option>
+                      <option value="23">11 PM – 12AM</option>
+                      <option value="24">12 AM – 1AM</option>
+                      </select><br>
+                
+                    <button id="partyTimeButton" style="width: 200px; height:20px;">Время вечеринки!</button>
+                
+                    <footer>
+                      <p>©Maximko 2022</p>
+                    </footer>
+                  </div>
+                
+            </div>
+        </div>
+        <h2  style="margin-bottom: 2%;">Мои работы</h2>
+        <div class="tabs">
+            <button class="scrolling"><</button>
+            <div class="tab">
+                <p><b>Работа 1</b></p>
+                <img src="img/kuzbass.png" alt="">
+                <a href="https://maximselkov.github.io/22.11/index.html">Открыть</a>
+                <p>Сайт для банка</p>
+                <p><b>Средства:</b> HTML, JS, CSS, Bootstrap</p>
+            </div>
+            <div class="tab">
+                <p><b>Работа 2</b></p>
+                <img src="img/myGiro.PNG" alt="">
+                <a href="https://maximselkov.github.io/23.11/index.html">Открыть</a>
+                <p>Сайт для магазина электроскутеров</p>
+                <p><b>Средства:</b> HTML, JS, CSS, Bootstrap</p>
+            </div>
+            <div class="tab">
+                <p><b>Работа 3</b></p>
+                <img src="img/ligaBank.svg" alt="">
+                <a href="https://maximselkov.github.io/26.11/index.html">Открыть</a>
+                <p>Сайт для банка</p>
+                <p><b>Средства:</b> HTML, JS, CSS, Bootstrap</p>
+            </div>
+            <div class="tab">
+                <p><b>Работа 4</b></p>
+                <img src="img/prazdnik.jpeg" alt="">
+                <a href="https://maximselkov.github.io/24.11/index.html">Открыть</a>
+                <p>Сайт для заказа праздников</p>
+                <p><b>Средства:</b> HTML, JS, CSS</p>
+            </div>
+            <button class="scrolling">></button>
+        </div>
+        <h2 style="margin-top: 5%; margin-bottom: 2%;">Я изучаю</h2>
+        <div class="myInfo" >
+            <img src="img/javascript.png" alt="">
+            <img src="img/c-sharp.png" alt="">
+            <img src="img/php.png" alt="">
+            <img src="img/bootstrap.png" alt="">
+        </div>
+        <h2 style="margin-top: 5%; margin-bottom: 2%;">Услуги и цены</h2>
+        <div class="services">
+            <div class="service">
+                <h2><b>Статический адаптивный сайт</b></h2>
+                <p><b>Цена: </b> 500 рублей за страницу</p>
+                <button>Заказать</button>
+            </div>
+            <div class="service">
+                <h2><b>Динамический адаптивный сайт</b></h2>
+                <p><b>Цена: </b> 1000 рублей за страницу</p>
+                <button>Заказать</button>
+            </div>
+        </div>
+    </div>
+    <footer class="footer" style="margin-top: 5%;">
+        <div class="logo">
+            <img src="img/logo.png" alt="">
+        </div>
+        <div class="footerMenu">
+            <h2>Меню</h2>
+            <a href="#">Мои работы</a>
+            <a href="#">Я изучаю</a>
+            <a href="#">Услуги и цены</a>
+            <a href="#">Контакты</a>
+        </div>
+        <h2>Контакты</h2>
+    </footer>
+    <script src="script/script.js"></script>
+</body>
+</html>
