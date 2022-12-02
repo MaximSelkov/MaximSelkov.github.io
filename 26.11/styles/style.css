@@ -1,0 +1,58 @@
+.carouser_text{
+    position: absolute;
+    bottom: 30%;
+    left: 20%;
+}
+.btnTab{
+    border: 0px;
+    background-color: transparent;
+    width: 100%;
+    margin-top: 10%;
+}
+.textBlock{
+    background-color: #f6f7ff; 
+    padding: 5%;
+    width: 77%;
+    display: none;
+}
+.calc-minus{
+    color: #9798a0;
+    position: relative;
+    bottom: 45px;
+    left: 2%;
+    border: none;
+    background-color: white;
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+}
+.calc-minus:hover{
+    color: black;
+}
+
+.calc-plus{
+    color: #9798a0;
+    position: relative;
+    bottom: 45px;
+    left: 82%;
+    border: none;
+    background-color: white;
+    font-size: 25px;
+    width: 40px;
+    height: 40px;
+}
+.calc-plus:hover{
+    color: black;
+}
+
+@media all and (max-width: 800px) {
+    .calc-plus {
+        left: 80%;
+    }
+  }
+
+@media all and (max-width: 500px) {
+    .calc-plus {
+        left: 70%;
+    }
+  }
