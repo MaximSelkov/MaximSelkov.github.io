@@ -176,6 +176,14 @@
       </div>
   </section>
           <h2 class="section-title" style="padding-bottom: 2%;">Ассортимент</h2>
+          <div class="filter" style="margin-bottom: 2%;">
+            <input type="checkbox" name="filter-checkbox" id="" class="checkbox" checked onclick="filter()">
+            <label for="filter-checkbox">Электровелосипеды</label>
+            <input type="checkbox" name="filter-checkbox" id="" class="checkbox" checked onclick="filter()">
+            <label for="filter-checkbox">Сигвеи</label>
+            <input type="checkbox" name="filter-checkbox" id="" class="checkbox" checked onclick="filter()">
+            <label for="filter-checkbox">Гироскутеры</label>
+        </div>
       <div class="cards">
           <div class="card card-velo"><img alt="image" class="card-image" src="img/velo3.jpg">
               <div class="card-text">
@@ -267,19 +275,6 @@
                   </div>
               </div>
           </div>
-          <div class="card card-mowe"><img alt="image" class="card-image" src="img/weel2.jpg">
-              <div class="card-text">
-                  <div class="card-heading">
-                      <h3 class="card-title">NineBot One Z10</h3><span class="card-tag tag">Нет в
-                          наличии</span>
-                  </div>
-                  <div class="card-info">
-                      <div class="rating"><img alt="rating" class="rating-star" src="img/rating.svg">5.0</div>
-                      <div class="price">99 990 ₽</div>
-                      <div class="category">Моноколесо</div>
-                  </div>
-              </div>
-          </div>
           <div class="card card-sigv"><img alt="image" class="card-image" src="img/segway2.jpg">
               <div class="card-text">
                   <div class="card-heading">
@@ -301,18 +296,6 @@
                       <div class="rating"><img alt="rating" class="rating-star" src="img/rating.svg">4.4</div>
                       <div class="price">От 12 990 ₽</div>
                       <div class="category">Сигвей</div>
-                  </div>
-              </div>
-          </div>
-          <div class="card card-mowe"><img alt="image" class="card-image" src="img/weel1.jpg">
-              <div class="card-text">
-                  <div class="card-heading">
-                      <h3 class="card-title">i-Wheel 132</h3><span class="card-tag tag">Нет в наличии</span>
-                  </div>
-                  <div class="card-info">
-                      <div class="rating"><img alt="rating" class="rating-star" src="img/rating.svg">3.6</div>
-                      <div class="price">От 25 990 ₽</div>
-                      <div class="category">Моноколесо</div>
                   </div>
               </div>
           </div>
@@ -404,6 +387,44 @@
         function backToTop() {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
+        }
+        let cardVelo = document.getElementsByClassName('card-velo');
+        let cardSigv = document.getElementsByClassName('card-sigv');
+        let cardGyro = document.getElementsByClassName('card-gyro');
+        let filterCheckbox = document.getElementsByName('filter-checkbox');
+        function filter(){
+            if(filterCheckbox[0].checked == false){
+                for(i=0;i<cardVelo.length;i++){
+                    cardVelo[i].style.display ='none';
+                }
+            }
+            else{
+                for(i=0;i<cardVelo.length;i++){
+                    cardVelo[i].style.display ='block';
+                }
+            }
+
+            if(filterCheckbox[1].checked == false){
+                for(i=0;i<cardSigv.length;i++){
+                    cardSigv[i].style.display ='none';
+                }
+            }
+            else{
+                for(i=0;i<cardSigv.length;i++){
+                    cardSigv[i].style.display ='block';
+                }
+            }
+
+            if(filterCheckbox[2].checked == false){
+                for(i=0;i<cardGyro.length;i++){
+                    cardGyro[i].style.display ='none';
+                }
+            }
+            else{
+                for(i=0;i<cardGyro.length;i++){
+                    cardGyro[i].style.display ='block';
+                }
+            }
         }
     </script>
 </body>
